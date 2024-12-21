@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "allahu akaber sUBHANALLAH";
+    std::cout << "hellow";
     return 0;
 }
