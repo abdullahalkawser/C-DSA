@@ -41,23 +41,34 @@ using namespace std;
 
 //Type Conversion & Type Casting   converssion (implicite is work  to do complier ) tow casting (to do programmer)
 
-int main (){
+// int main (){
 
 
-    char grade = 'a'; // a asi value 97 store memoery
-    float value = grade;
+//     char grade = 'a'; // a asi value 97 store memoery
+//     float value = grade;
 
 
-    double price = 2342.8899898;
-    int data = int(price);
-    //  cout << value ;//
-         cout << data ;
+//     double price = 2342.8899898;
+//     int data = int(price);
+//       cout << value ;//
+//          cout << data ;
+// }
+
+
+
+
+// input in c++
+
+
+
+int main() {
+    int x;
+    cout << "Type a number: "; // Prompt the user
+    
+    cin >> x;                  // Get user input
+    cout << "Your number: " << x; // Output the entered number
+    return 0;
 }
-
-
-
-
-
 
 
 
