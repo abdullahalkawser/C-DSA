@@ -61,17 +61,42 @@ using namespace std;
 
 
 
+// int main() {
+//     int x;
+//     cout << "Type a number: "; // Prompt the user
+
+//     cin >> x;                  // Get user input
+//     cout << "Your number: " << x; // Output the entered number
+//     return 0;
+// }
+
+
+
+//Operators
+
+
 int main() {
-    int x;
-    cout << "Type a number: "; // Prompt the user
-    
-    cin >> x;                  // Get user input
-    cout << "Your number: " << x; // Output the entered number
-    return 0;
+  int sum1 = 100 + 50;      //	Addition
+  int sum2 = 300 - 250;     //	Subtraction
+  int sum3 = 20 * 10;    //	Multiplication
+  int sum4 = 100  / 10;  //	Division
+  int sum5 = 211 % 10;   //	Modulus
+    int x = 5;
+  ++x; // 	Increment
+
+   int y = 3; //	Decrement 
+  --y;
+
+
+  cout << sum1 << "\n";
+  cout << sum2 << "\n";
+  cout << sum4 << "\n";
+  cout << sum5 << "\n";
+      cout << x << "\n";
+    cout << y  << "\n";
+
+  return 0;
 }
-
-
-
 
 
 
