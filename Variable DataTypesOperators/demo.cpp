@@ -84,10 +84,8 @@ int main() {
     int x = 5;
   ++x; // 	Increment
 
-   int y = 3; //	Decrement 
+  int y = 3; //	Decrement 
   --y;
-
-
   cout << sum1 << "\n";
   cout << sum2 << "\n";
   cout << sum4 << "\n";
