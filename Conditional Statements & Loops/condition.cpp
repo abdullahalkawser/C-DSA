@@ -85,6 +85,15 @@ int main() {
     cout << "Enter a character: ";
     cin >> ch;
 
+    // // // Check if the character is uppercase (ASCII range 65-90)
+    // if (ch >= 65 && ch <= 90) {
+    //     cout << ch << " is an uppercase letter." << endl;
+    // }
+    // // Check if the character is lowercase (ASCII range 97-122)
+    // else if (ch >= 97 && ch <= 122) {
+    //     cout << ch << " is a lowercase letter." << endl;
+    // }
+
     // Check if the character is uppercase
     if (isupper(ch)) {
         cout << ch << " is an uppercase letter." << endl;
@@ -100,4 +109,17 @@ int main() {
 
     return 0;
 }
+// ternary oparetos
+
+int main() {
+    int a = 10, b = 20, c = 15;
+
+    // Nested ternary operator
+    int largest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+
+    cout << "The largest number is: " << largest << endl;
+
+    return 0;
+}
+
 
