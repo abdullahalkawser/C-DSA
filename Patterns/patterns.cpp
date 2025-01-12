@@ -40,11 +40,11 @@ int main() {
 using namespace std;
 
 int main() {
-    int n;
+    int a;
     cout << "Enter the number of rows: ";
-    cin >> n;
+    cin >> a;
 
-    for (int i = n; i >= 1; i--) {
+    for (int i = a; i >= 1; i--) {
         for (int j = 1; j <= i; j++) {
             cout << "*";
         }
