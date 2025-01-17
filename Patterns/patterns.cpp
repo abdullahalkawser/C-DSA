@@ -1,3 +1,5 @@
+// Example size of the triangle
+
 #include <iostream>
 using namespace std;
 
@@ -11,7 +13,7 @@ void printTriangle(int n) {
 }
 
 int main() {
-    int n = 5; // Example size of the triangle
+    int n = 5; 
     printTriangle(n);
     return 0;
 }
