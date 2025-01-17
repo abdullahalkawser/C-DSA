@@ -139,3 +139,45 @@ int main() {
     return 0;
 }
 
+Singleton Pattern
+
+#include <iostream>
+#include <mutex>
+
+class Singleton {
+private:
+    static Singleton* instance;
+    static std::mutex mtx; // For thread safety
+    Singleton() {}         // Private constructor
+
+public:
+    // Delete copy constructor and assignment operator
+    Singleton(const Singleton&) = delete;
+    Singleton& operator=(const Singleton&) = delete;
+
+    static Singleton* getInstance() {
+        std::lock_guard<std::mutex> lock(mtx);
+        if (instance == nullptr) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+
+    void displayMessage() {
+        std::cout << "Singleton Instance: Hello, World!" << std::endl;
+    }
+};
+
+Singleton* Singleton::instance = nullptr;
+std::mutex Singleton::mtx;
+
+int main() {
+    Singleton* s1 = Singleton::getInstance();
+    Singleton* s2 = Singleton::getInstance();
+
+    s1->displayMessage();
+    std::cout << "Are both instances equal? " << (s1 == s2) << std::endl;
+
+    return 0;
+}
+
