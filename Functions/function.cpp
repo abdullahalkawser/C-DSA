@@ -20,3 +20,18 @@ int main() {
 
     return 0;
 }
+int main() {
+    int num1, num2;
+
+    // Input two numbers
+    std::cout << "Enter the father age : ";
+    std::cin >> num1;
+    std::cout << "Enter the your number: ";
+    std::cin >> num2;
+
+    // Call the function and display the result
+    int result = calculateSum(num1, num2);
+    std::cout << "The sum is: " << result << std::endl;
+
+    return 0;
+}
