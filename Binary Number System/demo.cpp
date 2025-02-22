@@ -2,24 +2,25 @@
 using namespace std;
 
 int main() {
-    int n;
+    int decimal, binary = 0, place = 1;
+    
     cout << "Enter a decimal number: ";
-    cin >> n;
+    cin >> decimal;
+    
+    int num = decimal; // Copy of the original number
 
-    if (n < 0) {
-        cout << "Please enter a non-negative number.\n";
-        return 0;
+    while (num > 0) {
+        int remainder = num % 2;
+        binary += remainder * place;
+        num /= 2;
+        place *= 10; // Shift place value
     }
 
-    string binary = "";
-    do {
-        binary = to_string(n % 2) + binary;
-        n /= 2;
-    } while (n > 0);
-
-    cout << "Binary: " << binary << endl;
+    cout << "Binary equivalent: " << binary << endl;
+    
     return 0;
 }
+
 
 
 // convert numbers from 1 to 10 into binary,
