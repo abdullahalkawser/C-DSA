@@ -44,3 +44,24 @@ int main() {
     }
     return 0;
 }
+
+// binary to Decimal
+int main() {
+    int binary, decimal = 0, base = 1;
+    
+    cout << "Enter a binary number: ";
+    cin >> binary;
+
+    int num = binary; // Copy of the original number
+
+    while (num > 0) {
+        int last_digit = num % 10; // Extract last digit
+        decimal += last_digit * base;
+        num /= 10; // Remove last digit
+        base *= 2; // Increase power of 2
+    }
+
+    cout << "Decimal equivalent: " << decimal << endl;
+    
+    return 0;
+}
